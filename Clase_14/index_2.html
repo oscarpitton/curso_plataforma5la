@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 14 - Ejercicio 1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-color: orange;
+		}
+	</style>
+
+</head>
+<body>
+<div id="favoritos"></div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+		var favoritos = []
+		var famosos = ['alex smith', 'amy whinehouse', 'cameron diaz', 'brad pitt', 'ashton kutcher', 'mark whalberg', 'morgan freeman', 'mila kunis']
+
+		for (datos in famosos){
+			console.log(famosos[datos])
+
+			if (famosos[datos][0] === "a"){
+				$('#favoritos').append('<p>'+famosos[datos]+'</p>')
+				favoritos.push(famosos[datos])
+			}
+		}
+
+		
+
+	</script>
+		
+
+</body>
+</html>

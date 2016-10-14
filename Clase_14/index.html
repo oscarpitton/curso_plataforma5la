@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 14 - Ejercicio 1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-color: green;
+		}
+	</style>
+
+</head>
+<body>
+<div id="color"></div>
+<div id="marca"></div>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+		// Ejercicio 1
+		var mi_auto ={}
+		mi_auto ['marca'] = 'Renault',
+		mi_auto ['anio'] = 2014,
+		mi_auto ['nuevo'] = false
+
+		// Ejercicio 2
+		var property_key = "modelo"
+		mi_auto[property_key] = "Stepway"
+		var another_property_key = "precio"
+		mi_auto [another_property_key] = 160
+		var next_property = "color"
+		mi_auto [next_property] = "Azul"
+
+		// Ejercicio 3
+		for (var dato in mi_auto){
+			console.log(mi_auto[dato])
+			if (dato === "color"){
+				$('#color').append('<img src=http://images.teinteresa.es/motor/Dacia-Sandero-Stepway_TINIMA20121220_0268_5.jpg>')
+			}
+			if (dato === "marca"){
+				$('#marca').append('<b>'+mi_auto[dato]+'</b>')
+			}
+		}
+
+		// Ejercicio 4
+		var numbers = [ 2, 4, 5, 10, 0]
+		var double_numbers = {}
+		for( var i in numbers ){
+		  double_numbers [ numbers[i] ] = numbers[i] * 2;
+		}
+
+		// Ejercicio 4.2
+		for(var i = 0; i < numbers.length; i ++) {
+			double_numbers[ numbers[i] ] = numbers[i] * 2;
+			}
+
+
+	</script>
+		
+
+</body>
+</html>

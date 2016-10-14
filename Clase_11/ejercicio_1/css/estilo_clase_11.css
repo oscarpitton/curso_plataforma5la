@@ -1,0 +1,14 @@
+body{
+	background-color: #deaf58;
+}
+div {
+	height: 400px;
+}
+
+.mediano div {
+	height: 200px;
+}
+
+div {
+	height: 50px;
+}

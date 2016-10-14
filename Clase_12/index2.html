@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 12 - Ejercicio 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+	.beeper{
+		font-family: Trebuchet MS;
+		font-size: 15px;
+		padding: 40px;
+	}
+	img{
+		width: 50%;
+		height: 50%;
+	}
+	</style>
+</head>
+<body>
+
+<button id="money" type="button" class="btn btn-danger">Show me the money</button><br></br>
+<button id="opra" type="button" class="btn btn-primary">Show me the Oprah</button><br></br>
+<button id="opera" type="button" class="btn btn-success">Show me the Opera</button>
+
+<div>
+<img/>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+
+		document.querySelector('#money').addEventListener('click', function() {
+			$('img').attr("src",'http://image.shutterstock.com/z/stock-vector-bag-with-packs-of-dollars-money-vector-illustration-isolated-on-white-background-46780867.jpg')
+	
+		})
+
+		document.querySelector('#opra').addEventListener('click', function(){
+			$('img').attr('src','https://i.ytimg.com/vi/DjM9Lve5X5I/maxresdefault.jpg')
+		})
+
+		document.querySelector('#opera').addEventListener('click', function(){
+			$('img').attr('src', 'https://k46.kn3.net/taringa/7/4/9/A/0/D/harryelcrapero/A03.gif')
+		})
+
+
+
+		
+		
+
+
+
+
+		// var fn = function () {
+		//   console.log('heeey')
+		// }
+
+		// document.querySelector('h1').addEventListener('click', fn)
+
+		// document.querySelector('#target').addEventListener('click', function() {
+		//   console.log('same deal')
+		// })
+
+		// var fn = function () {
+		//   console.log('Beep')
+		// }
+		
+		// document.querySelector('.beeper').addEventListener('click', function(){
+		// 	$('.beeper').append('<p>Beer</p>')
+		// var randomColor = '#' + Math.random().toString(16).slice(2, 8)
+		// 	$('body').css('background-color', randomColor)
+		
+
+		// })
+
+	</script>
+
+</body>
+</html>

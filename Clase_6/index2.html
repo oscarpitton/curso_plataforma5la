@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 6 - JavaScrip - Ejerecio Greeter</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#greeting{
+			width: 250px;
+			height: 300px;
+			background-color: blue;
+		}
+		h1{
+			font-size: 50px;
+			text-align: center;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<div id=greeting>
+		<h1>Hola</h1>
+	</div>
+
+	<script type="text/javascript">
+		var visit_name = prompt("¿Cómo te llamas?");
+		
+		var welcome_message = "Bienvenido " + visit_name
+		document.querySelector ("#greeting h1").textContent = welcome_message
+		// alert("¿Cómo estás " + prompt("Holla, ¿Cómo te llamas?") + "?")
+
+</script>
+
+</body>
+</html>

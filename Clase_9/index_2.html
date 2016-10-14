@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 9 - Ejercicio 2</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<body>
+
+<div id="tema">Elección</div>
+<div id="titulo">Buena elección</div>
+<p>Tomaste una buena opción</p>
+<div class="dos">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<img src="">
+	<script type="text/javascript">
+		var colorbody = prompt('Ingresá un color')
+
+		while(colorbody !== 'rojo' && colorbody !== 'amarillo'){
+			colorbody = prompt('Ingresá un color')
+		}
+		if(colorbody === 'rojo'){
+		$('body').css('background-color', 'red')
+		$('#tema').text("El color eledigo es el Rojo")
+		$('#titulo').css('background-color', '#f13939')
+		$('p').css('background-color', '#ef7272')
+		$('.dos').css('background-color', '#f5a5a5')
+		$('img').attr('src','http://maximoribas.es/psicologiadelcolor/wp-content/uploads/sites/3/2014/11/amarillo-palido.gif')
+
+		} else{
+			$('body').css('background-color', 'yellow')
+			$('#tema').text("El color eledigo es el Amarillo")
+			$('#titulo').css('background-color', '#ecec26')
+			$('p').css('background-color', '#f5f572')
+			$('.dos').css('background-color', '#f1f19b')
+			$('img').attr('src','https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Color_icon_red.svg/250px-Color_icon_red.svg.png')
+		}
+
+		
+
+	</script>
+</body>
+</html>

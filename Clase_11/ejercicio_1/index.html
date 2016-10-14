@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 11 - Ejercicio 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo_clase_5.css">
+</head>
+<body>
+	<div class="container">
+		<div id="resultado_1">
+			
+		</div>
+		<div id="resultado_2">
+			
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+		var get_sentence = function(){
+			if (Math.random() < 0.5 ) {
+				// $('#resultado_1').append('Uno') 
+				return "Hola"
+			} else {
+				// $('#resultado_2').append('Dos')
+				return "Chao"
+			}
+
+			}
+		var n = 10 
+		while( n > 0 ){
+			$("body").append("<p>" + get_sentence() + "</p>")
+			n--
+		}
+
+	</script>
+
+</body>
+</html>

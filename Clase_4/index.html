@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Clase 4 - Formularios</title>
+</head>
+<body>
+<form action="form-responses/new" method="Post">
+	<label>Nombre<br>
+	<input type="text" name="firstname" value="default" size="100">
+	</label><br>
+
+
+	<label for="#3">Password</label>
+	<input id="3" type="password" name="pswd">
+	<br>
+
+	<label><br>
+	<input type="email" name="UserMail" placeholder="Hello@mail.com">
+	</label>
+	<label for="#1">Opción 1</label><br>
+
+	<input id="1" type="radio" name="weird" value="code-blue" checked><span>Span 1</span><br>
+	<input type="radio" name="weird" value="code-orange" checked><span>Span 2</span><br>
+
+	<input type="checkbox" name="option" value="True" checked>Sin nada 1<br>
+	<input type="checkbox" name="optout" value="False" > O este otro<br>
+
+	<select name="Autos"><br>
+		<optgroup label="Autos Alemanes"><br>
+			<option value="Auto_1">VW</option>
+			<option value="Auto_2">Mercedes Benz</option>
+		</optgroup>
+	</select><br>
+
+	<textarea name="user_name" rows="8" cols="40"></textarea><br>
+	<input type="submit" name="">
+</form>
+</body>
+</html>

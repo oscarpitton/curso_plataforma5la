@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 13 - Bola Mágica</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Bola 8 - La Mágia</h1>
+</div>
+<div class="container">
+	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-md-4">
+  				<img src="http://www.magic8ball.org/wordpress/wp-content/uploads/The_Magic_8_Ball_Has_All_the_Answers.png">
+  			</div>
+  			<div class="col-md-4">
+  				<h3>Pregunta</h3>
+  				<form>
+				  <div class="form-group">
+				    <label for="text">¿Cuál es tu pregunta:</label>
+				    <input id="input" type="email" class="form-control" id="email">
+				  </div>
+				  <button id="pregunta" type="button" class="btn btn-warning">Preguntar</button>
+				</form>
+  			</div>
+  			<div class="col-md-4">
+  				<h3><i>Respuesta</i></h3>
+  				<div class="respuesta"></div>
+  			</div>
+  		</div>
+	</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+	var primer_pregunta = 
+
+	var respuestas_auto = []
+	respuestas_auto[0]="Si"
+	respuestas_auto[1]="Tal vez"
+	respuestas_auto[2]="Puede ser"
+	respuestas_auto[3]="Es poco probable que lo logres"
+	respuestas_auto[4]="Tienes muchas chances"
+	respuestas_auto[5]="Estas muy lejos"
+	respuestas_auto[6]="Es probable"
+	respuestas_auto[7]="Quizás"
+	respuestas_auto[8]="No"
+
+	// while (primer_pregunta !== ' '){
+
+	// }
+	// for (var i = 0; i<len; i++){
+ //  			nuevo.push(editar.shift( ));
+ //  			nuevo.push(editar.pop());
+ //  		}
+	
+	document.querySelector('#pregunta').addEventListener('click', function () {
+		prompt("¿Tenes una nueva consulta?")
+	})
+
+	</script>
+
+
+
+</body>
+</html>

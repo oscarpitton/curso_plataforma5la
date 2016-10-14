@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLase 19</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<style type="text/css">
+		.container {
+		    background-color: #f7c873;
+		    height: 200px;
+		}
+		.autos{
+			background-color: #73f7eb;
+			height: 450px;
+		}
+		select{
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<div class="container">
+	<select id="modelo">
+		<option value="ford" name="focus">Focus</option>
+		<option value="vw" name="goltrend">Gol Trend</option>
+		<option value="renault" name="clio">Clio</option>
+		<option value="honda" name="civic">Civic</option>
+	</select>
+	<p>
+	<select id="speed">
+		<option value="100" >100</option>
+		<option value="110" >110</option>
+		<option value="120" >120</option>
+		<option value="130" >130</option>
+	</select>
+	<p>	
+	<select id="color">
+		<option value="rojo">Rojo</option>
+		<option value="azul">Azul</option>
+		<option value="verde">Verde</option>
+		<option value="gris">Gris</option>
+	</select>
+	<p>
+	<button class="btn btn-success btn-sm">Agregar Auto</button>
+	</p>
+</div>
+
+<div class="container autos">
+	<div id="nuevo_autos">
+		
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+        var car_factory = function (modelo, color){
+        	var car ={}
+
+        	car.modelo = modelo
+        	car.color = color
+
+        	return car
+        }
+
+      var autos = []
+
+      console.log()
+
+      $("button").click( function(){
+      	var modelo = $("#modelo").val();
+      	var speed = $("#speed").val();
+      	var color = $("#color").val();
+
+      	// autos.push(car_factory( $('#nuevo_autos')
+      	// 	)
+      	if (color === 'rojo'){
+      		$('#nuevo_autos').append('<img src="http://www.gyabroker.com.ar/uploads/2/1/8/9/21899574/1730331_orig.png">')
+      	}else if (color === 'azul'){
+      		$('#nuevo_autos').append('<img src="http://publicdomainvectors.org/photos/Harreck_Blue_Car.png">')
+      	}else if (color === 'verde'){
+      		$('#nuevo_autos').append('<img src="http://publicdomainvectors.org/photos/Chrisdesign_Beetle_(car).png">')
+      	}else {
+      		$('#nuevo_autos').append('<img src="http://publicdomainvectors.org/photos/Chrisdesign_Beetle_(car).png">')
+      	}
+      	
+
+      	
+      })
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLase 18</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<div id="answer"></div>
+<div id="valor"></div>
+
+<script type="text/javascript">
+        // var answer_logger = function(fn){
+        //     $('#answer').append( fn() )
+        // }
+
+        // answer_logger(function(){
+        //     return "Yo deberia aparecer en un div#answer!"
+        // })
+
+        // var numero = function(fn){
+        //     $('#valor').append(fn())
+        // }
+        // numero (function(){
+        //     return 3
+        // })
+
+    var answer_collector = function(arr){
+        var salida = [];
+
+        for (var i = 0; i < arr.length; i++){
+            salida[i]= arr[i]();
+        }
+        return salida;
+    };
+
+    var fn =function() {return 1};
+    var fn2 =function() {return 2};
+    var fn3 =function() {return 3};
+
+    </script>
+
+
+</body>
+</html>

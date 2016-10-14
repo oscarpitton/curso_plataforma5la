@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Agencia de Viajes</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<div id="general">
+		<div id="header">
+			<div class="logo">
+				<a href="index.html">Agencia de Viajes</a>
+			</div>
+		</div>
+	</div>
+	<div id="clima" class="clima">
+		
+	</div>
+	<div class="ciudades">
+			<button id="jujuy" type="button" class="btn btn-success">Jujuy</button>
+			<button id="tucumann" type="button" class="btn btn-warning">Tucumán</button>
+		</div>
+	
+	<div id="contenido">
+		<div class="titulo">
+			<h1>Salta</h1>
+		</div>
+			<div class="destinos">
+				<img src="img/big/salta.jpg">
+			</div>
+			<div class="informacion">
+				Salta es una de las 23 provincias que forman la República Argentina. Está situada en la Región del Norte Grande Argentino al noroeste del país. Limita al norte con Jujuy y Bolivia (Tarija), al este con Paraguay, Formosa y Chaco, al sur con Santiago del Estero, Tucumán y Catamarca y al oeste con Chile. Su capital es la ciudad del mismo nombre.<br>
+				Cubre 155 488 km², con una población de 1 333 365 habitantes (2015).
+				<p>
+					Valor por persona: <b>$8000.-</b>
+				</p>
+			</div>
+			<div class="cotizar">
+				Solicitar Cotización
+			</div>
+
+	</div>
+	<div id="footer">
+	Agencia de Viajes
+		<div class="contacto">Teléfono: 4567-8901</div>
+		
+	</div>
+<script type="text/javascript">
+//Weather
+var to_be_run_on_server_response_weather = function(data){
+	var hora = new Date(data.sys.sunrise * 1000);
+	$('#clima').empty()
+	  $('#clima').append("Temperatura Actual: " + data.main.temp.toFixed(1) + "º")
+	  $('#clima').append("<img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'>")
+	  $('#clima').append("<li>Temperatura Mínima: " + data.main.temp_min.toFixed(1) + "º </li>")
+	  $('#clima').append("<li>Temperatura Máxima: " + data.main.temp_max.toFixed(1)  + "º </li>")
+	  $('#clima').append("<li>El Sol sale a las: " +  hora.getHours() + ":" + hora.getMinutes() + "</li>")
+
+}
+
+$.get('http://api.openweathermap.org/data/2.5/weather?q=salta&appid=95176c8edea30e33338e0eaddd53a916&units=metric').success(to_be_run_on_server_response_weather)
+	
+
+	$('#jujuy').click( function() {
+		$.get('http://api.openweathermap.org/data/2.5/weather?q=jujuy&appid=95176c8edea30e33338e0eaddd53a916&units=metric').success(to_be_run_on_server_response_weather)
+	})
+	$('#tucumann').click( function() {
+		$.get('http://api.openweathermap.org/data/2.5/weather?q=jujuy&appid=95176c8edea30e33338e0eaddd53a916&units=metric').success(to_be_run_on_server_response_weather)
+	})
+
+
+	
+		
+
+
+</script>
+</body>
+</html>

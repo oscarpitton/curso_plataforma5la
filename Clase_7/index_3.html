@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 7 - Ejericicio 3</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+
+<input id="search" type="" name="" value="happinessssss">
+<div id="output"></div>
+
+<script type="text/javascript">
+	// another approach
+	var user_input = document.querySelector('input#search').value,
+    output_el = document.querySelector('#output')
+
+		// another approach
+	if (user_input === "happiness") {
+	  output_el.textContent = "ahh, the enlightened one!"
+	} else if (!user_input) {
+	  document.querySelector('input').value = "hey you, type here :z"
+	} else {
+	  output_el.textContent = "You're searching for the wrong thing"
+	}
+</script>
+</body>
+</html>

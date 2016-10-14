@@ -1,0 +1,128 @@
+body{
+	background-color: #ECBF78;
+}
+h1{
+	font-style: bold;
+	font-size: 18px;
+	font-family: Verdana;
+}
+#general{
+	padding: 20px 10px 20px 10px;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+#header{
+	background-color: #FFEDAF;
+	padding: 2px 2px 2px 10px;
+	border-bottom: 3px solid #ccc;
+	width: auto;
+	cursor: pointer;
+}
+.logo{
+	font-family: Verdana;
+	font-size: 45px;
+	font-style: bold;
+}
+.logo:hover{
+	font-style: italic;
+}
+.logo a{
+	color: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#contenido{
+	padding: 2px 2px 2px 10px;
+}
+.titulo{
+	font-family: Verdana;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+.ciudades{
+	float: right;
+	margin-left: : 10px;
+	margin-top: 120px;
+}
+.clima{
+	float: right;
+	margin-right: 20px;
+}
+.clima img {
+	border: none;
+}
+.clima img:hover{
+	border: none;
+	border-radius: none;
+}
+.clima li{  
+list-style-type:none;  
+} 
+a{
+	padding: 2px;
+}
+a:hover{
+	padding: 5px;
+}
+img{
+	border: 2px solid #ccc;
+	border-radius: 3px;
+}
+img:hover{
+	border: 3px solid #ccc;
+	border-radius: 6px;
+}
+.destinos{
+	margin: 0 auto;
+    display: block;
+}
+.destino img{
+	margin: 0 auto;
+    display: block;
+}
+.informacion{
+	font-family: Verdana;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: justify;
+	cursor: pointer;
+}
+.cotizar{
+	font-family: Verdana;
+	font-size: 15px;
+	font-style: bold;
+	background-color: #4E739F;
+	width: 150px;
+	height: 20px;
+	padding: 10px;
+	cursor: pointer;
+
+}
+.cotizar:hover{
+	font-family: Verdana;
+	font-size: 15px;
+	font-style: italic;
+	background-color: #6392C9;
+	width: 150px;
+	height: 20px;
+	padding: 10px;
+	cursor: pointer;
+
+}
+#footer{
+	background-color: #FFEDAF;
+	padding: 20px 2px 20px 10px;
+	font-family: Verdana;
+	margin-top: 10px;
+}
+.contacto{
+	font-family: Verdana;
+	text-align: right;
+	padding-right: 10px;
+}
+

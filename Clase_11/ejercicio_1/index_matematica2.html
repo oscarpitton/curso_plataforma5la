@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 11 - Ejercicio de Mateática</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo_clase_11.css">
+</head>
+<body>
+	<div class="container">
+		<!-- <div id="resultado_1">
+			
+		</div>
+		<div id="resultado_2">
+			
+		</div> -->
+		<form>
+		  <div class="form-group">
+		    <label for="number">Ingrese el Valor de Viaje:</label>
+		    <input type="number" class="form-control" id="valor">
+		  </div>
+		  <div class="form-group">
+		    <label for="number">Cantidad de Cuotas:</label>
+		    <input type="number" class="form-control" id="cuotas">
+		  </div>
+		  <div class="form-group">
+		    <label for="number">Valor de las Cuotas:</label>
+		    <input type="number" class="form-control" id="valor_cuotas">
+		  </div>
+		  
+		  <button id="calcular" class="btn btn-default">Calcular</button>
+		</form>
+		<div id="output"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+		
+        
+        var calculadora = function (v, c){
+            return v/c
+        }
+        
+        
+        document.querySelector('#calcular').addEventListener('click', function() {
+          console.log('same deal')
+          var valor = $("#valor").val()
+          var cuotas = $("#cuotas".val()
+          $("#valor_cuotas").val( calculadora(valor, cuotas) )
+          
+        })
+        
+        
+	</script>
+
+</body>
+</html>

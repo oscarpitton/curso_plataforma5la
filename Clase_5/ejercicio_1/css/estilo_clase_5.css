@@ -1,0 +1,37 @@
+body{
+	background-color: orange;
+}
+.borde{
+	border: 2px solid #fff;
+}
+.azul{
+	background-color: blue;
+}
+.azul2{
+	background-color: #0072ff;
+}
+.verde{
+	background-color: green;
+}
+.verde2{
+	background-color: #0a1002;
+}
+.violeta{
+	background-color: #3c114a;
+}
+.violeta2{
+	background-color: #391542;
+}
+.caqui{
+	background-color: #4c3823;
+}
+.caqui2{
+	background-color: #4c4723;
+}
+div {
+	height: 400px;
+}
+
+.mediano div {
+	height: 200px;
+}

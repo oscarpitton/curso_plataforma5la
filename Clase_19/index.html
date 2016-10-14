@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLase 19</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<div id="answer"></div>
+<div id="valor"></div>
+
+<script type="text/javascript">
+        var oscar = {
+        	name: 'Oscar',
+        	localidad: 'Morón',
+        	age: '30',
+        	hobbies: ['Futbol', 'viajar', 'ver TV'],
+        	dog:{
+        		name: 'luna',
+        		hobbies: ['jugar','correr'],
+        	},
+
+        	party: function(){
+        		console.log('Salir', 'tomar cerveza', 'comer')
+        	}
+        }
+
+        oscar.work = function(){
+        	console.log(this.name + " trabaja en Parlermo")
+        	console.log("La agencia dónde trabaja " +this.name+ "se llama Nerd")
+        } 
+        oscar.workout = function(){
+        	console.log("Cuando " +this.name+ " llega a su casa, juega con su perra, que se llama " +this.dog.name)
+        }
+
+        oscar.float_through_life_on_autopilot = function(){
+        	this.work();
+        	this.workout();
+        	this.party();
+
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

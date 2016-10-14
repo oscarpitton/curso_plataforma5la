@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 7</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+
+<input id="search" type="" name="" value="sa">
+<div id="output"></div>
+
+
+<script type="text/javascript">
+	var user_input = document.querySelector('input#search').value,
+    output_el = document.querySelector('#output')
+
+	if (user_input !== "happiness") {
+	  if (!user_input) { // Esto nos muestra algo importante sobre los strings vacios
+	    // ¿Que pasaría si intentamos usar?      user_input =
+	    document.querySelector('input').value = "hey you, type here :z"
+	  } else {
+	    output_el.textContent = "You're searching for the wrong thing"
+	  }
+	} else {
+	  output_el.textContent = "ahh, the enlightened one!"
+	}
+</script>
+</body>
+</html>

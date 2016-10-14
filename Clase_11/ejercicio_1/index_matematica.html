@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 11 - Ejercicio de Mateática</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo_clase_11.css">
+</head>
+<body>
+	<div class="container">
+		<!-- <div id="resultado_1">
+			
+		</div>
+		<div id="resultado_2">
+			
+		</div> -->
+		<form>
+		  <div class="form-group">
+		    <label for="number">Ingrese el Valor de Viaje:</label>
+		    <input type="number" class="form-control" id="valor">
+		  </div>
+		  <div class="form-group">
+		    <label for="number">Cantidad de Cuotas:</label>
+		    <input type="number" class="form-control" id="cuotas">
+		  </div>
+		  <div class="form-group">
+		    <label for="number">Valor de las Cuotas:</label>
+		    <input type="number" class="form-control" id="valor_cuotas">
+		  </div>
+		  
+		  <button type="submit" class="btn btn-default">Calcular</button>
+		</form>
+		<div id="output"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+		var tripler = function(numero){
+			return numero * 3
+			
+		}
+
+		var divide = function(uno, dos){
+			return uno / dos
+		}
+
+		var remainder = function(tres, cuatro){
+			return tres%cuatro
+		}
+
+		var string_printer = function( s ){
+			$('#output').text(s)
+		}
+
+		string_printer( "hola" )
+		string_printer( prompt("dshajsdsa") )
+
+		// var get_sentence = function(){
+		// 	if (Math.random() < 0.5 ) {
+		// 		// $('#resultado_1').append('Uno') 
+		// 		return "Hola"
+		// 	} else {
+		// 		// $('#resultado_2').append('Dos')
+		// 		return "Chao"
+		// 	}
+
+		// 	}
+		// var n = 10 
+		// while( n > 0 ){
+		// 	$("body").append("<p>" + get_sentence() + "</p>")
+		// 	n--
+		// }
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 8 | Ejercicio 2</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.impares {
+			color: orange;
+			font-size: 15px;
+		}
+		.par {
+			color: blue;
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+
+<div id="target"></div>
+
+<script type="text/javascript">
+	
+	var n = 10, x = 1, resultado = "<div id=target>" 
+
+	while (x < n){
+		if (x === n-1){
+			resultado = resultado + "<p>" + x + "</p>" + "</div>"
+		} else if (x % 2 === 0 ) {
+				resultado = resultado + "<p class='par'>" + x + ", " + "</p>"  + "<hr>"
+			} else{
+				resultado = resultado + "<p class='impares'>" + x + ", " + "</p>"  + "<hr>"
+			}
+		
+		
+
+		x++
+		}
+	
+
+	// document.querySelector ("#target") .textContent = resultado
+	document.querySelector ("#target").innerHTML = resultado
+
+
+</script>
+
+</body>
+</html>
